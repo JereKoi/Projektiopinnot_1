@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem;
+﻿using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -18,7 +15,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if(Time.time >= nextAttackTime)
+        if (Time.time >= nextAttackTime)
         {
             if (Input.GetKey(KeyCode.Mouse1))
             {
