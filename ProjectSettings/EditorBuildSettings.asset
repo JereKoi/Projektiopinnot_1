@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Ryhma Scenet/Jere/Menu.unity
+    guid: e6d5789e77ab99e4b8e0c6812c1d34cb
+  - enabled: 1
+    path: Assets/Ryhma Scenet/Jere/SettingsScene.unity
+    guid: 9f0c0c3f2e5f33a4da230fcd695f6ece
   m_configObjects: {}
