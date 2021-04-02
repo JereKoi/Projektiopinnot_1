@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ExplosionTag
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1105245395
+    locked: 0
+  - name: ExplosionTag
+    uniqueID: 2990344169
+    locked: 0
+  - name: FireballTag
+    uniqueID: 108533215
     locked: 0
