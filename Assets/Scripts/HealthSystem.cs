@@ -5,26 +5,35 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     public GameObject[] hearts;
-    public int life;
+    private int life;
+    private bool dead;
+
+    private void Start()
+    {
+        life = hearts.Length;
+    }
 
     void Update()
     {
-        if (life < 1)
+        if (dead == true)
         {
-            Destroy(hearts[0].gameObject);
-        } else if (life < 2)
-        {
-            Destroy(hearts[1].gameObject);
+            //SET DEAD CODE
+            Debug.Log("We are DEAD");
         }
-        else if (life < 3)
-        {
-            Destroy(hearts[2].gameObject);
-        }
+        
     }
 
     public void TakeDamage(int d)
     {
-        life -= d;
+        if (life >= 1) 
+        {
+            life -= d;
+            Destroy(hearts[life].gameObject);
+            if(life < 1)
+            {
+                dead = true;
+            }
+        }
     }
 }
     
