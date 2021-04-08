@@ -13,8 +13,8 @@ public class PlayerCombat : MonoBehaviour
 
     public int attackDamage = 40;
     public float attackRange = 0.5f;
-    public float cooldownTime = 2f;
-    private float nextFireTime = 0f;
+    //public float cooldownTime = 2f;
+    //private float nextFireTime = 0f;
 
     public float attackRate = 10f;
     float nextAttackTime = 0f;
@@ -29,15 +29,15 @@ public class PlayerCombat : MonoBehaviour
                 nextAttackTime = Time.time + 2f / attackRate;
             }
         }
-        if (Time.time > nextFireTime)
-        {
+        //if (Time.time > nextFireTime)
+        //{
 
-            if (Input.GetMouseButtonDown(1))
-            {
-                Instantiate(projectile, firePosition.position, firePosition.rotation);
-                nextFireTime = Time.time + cooldownTime;
-            }
-        }
+        //    if (Input.GetMouseButtonDown(1))
+        //    {
+        //        Instantiate(projectile, firePosition.position, firePosition.rotation);
+        //        nextFireTime = Time.time + cooldownTime;
+        //    }
+        //}
     }
 
     void Attack()
