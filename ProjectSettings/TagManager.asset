@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ExplosionTag
+  - Enemy
+  - GroundCollider
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
-  - 
+  - GroundCollider
+  - Player
   - 
   - 
   - 
