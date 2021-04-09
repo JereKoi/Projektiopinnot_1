@@ -62,3 +62,6 @@ TagManager:
   - name: Spikes
     uniqueID: 279293943
     locked: 0
+  - name: Enemy
+    uniqueID: 3479617477
+    locked: 0
