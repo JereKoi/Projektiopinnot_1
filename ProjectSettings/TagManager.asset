@@ -19,7 +19,7 @@ TagManager:
   - Enemy
   - GroundCollider
   - Player
-  - 
+  - Spikes
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: FireballTag
     uniqueID: 108533215
+    locked: 0
+  - name: Spikes
+    uniqueID: 279293943
     locked: 0
