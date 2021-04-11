@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 2172658466295032177}
   - component: {fileID: 2172658466295032176}
   - component: {fileID: 2172658466295032179}
-  - component: {fileID: 2172658466295032178}
   m_Layer: 0
   m_Name: KnightTestiJere
   m_TagString: Player
@@ -57,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2172658466295032181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1851, y: 0.4257, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 11.07613, y: 7.3263087, z: 1}
   m_Children:
   - {fileID: 2172658465695120034}
@@ -135,30 +134,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2172658466295032178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2172658466295032181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e435d783e599d45baf821229fc81a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 2172658466295032179}
-  firePosition: {fileID: 2172658467605629754}
-  projectile: {fileID: 9159914231297659164, guid: 223d9210a83335047ae5016c0facb5e0,
-    type: 3}
-  attackPoint: {fileID: 2172658465695120034}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 256
-  attackDamage: 40
-  attackRange: 0.5
-  cooldownTime: 0
-  attackRate: 2
 --- !u!1 &2172658467605629757
 GameObject:
   m_ObjectHideFlags: 0

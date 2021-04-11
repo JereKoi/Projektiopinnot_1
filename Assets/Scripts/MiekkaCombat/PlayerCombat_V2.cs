@@ -21,10 +21,15 @@ public class PlayerCombat_V2 : MonoBehaviour
 
     private Animator anim;
 
+    private PlayerControllerV2 PC;
+    private PlayerStats PS;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
         anim.SetBool("canAttack", combatEnabled);
+        PC = GetComponent<PlayerControllerV2>();
+        PS = GetComponent<PlayerStats>();
     }
 
     private void Update()
@@ -35,10 +40,11 @@ public class PlayerCombat_V2 : MonoBehaviour
 
     private void CheckCombatInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Attack"))
         {
             if (combatEnabled)
             {
+                Debug.Log("Attacking");
                 //Attempt combat
                 gotInput = true;
                 lastInputTime = Time.time;
@@ -51,8 +57,9 @@ public class PlayerCombat_V2 : MonoBehaviour
         if (gotInput)
         {
             //perform attack1
-            if (isAttacking)
+            if (!isAttacking)
             {
+                Debug.Log("gotinput toimii combatissa");
                 gotInput = false;
                 isAttacking = true;
                 isFirstAttack = !isFirstAttack;
@@ -88,6 +95,27 @@ public class PlayerCombat_V2 : MonoBehaviour
         isAttacking = false;
         anim.SetBool("isAttacking", isAttacking);
         anim.SetBool("attack1", false);
+    }
+
+    private void Damage(float[] attackDetails)
+    {
+        if (!PC.GetDashStatus())
+        {
+            int direction;
+
+            PS.DecreaseHealth(attackDetails[0]);
+
+            if (attackDetails[1] < transform.position.x)
+            {
+                direction = 1;
+            }
+            else
+            {
+                direction = -1;
+            }
+
+            PC.Knockback(direction);
+        }
     }
 
     private void OnDrawGizmos()
