@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDetectedState : State
+public class AttackState : State
 {
-    protected D_PlayerDetected stateData;
+    protected Transform attackPosition;
 
+    protected bool isAnimationFinished;
     protected bool isPlayerInMinAgroRange;
-    protected bool isPlayerInMaxAgroRange;
-    protected bool performLongRangeAction;
 
-    public PlayerDetectedState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_PlayerDetected stateData) : base(entity, stateMachine, animBoolName)
+    public AttackState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition) : base(entity, stateMachine, animBoolName)
     {
-        this.stateData = stateData;
+        this.attackPosition = attackPosition;
     }
 
     public override void DoChecks()
@@ -20,14 +19,14 @@ public class PlayerDetectedState : State
         base.DoChecks();
 
         isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
-        isPlayerInMaxAgroRange = entity.CheckPlayerInMaxAgroRange();
     }
 
     public override void Enter()
     {
         base.Enter();
 
-        performLongRangeAction = false;
+        entity.atsm.attackState = this;
+        isAnimationFinished = false;
         entity.SetVelocity(0f);
     }
 
@@ -39,15 +38,20 @@ public class PlayerDetectedState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
-        if (Time.time >= startTime + stateData.longRangeActionTime)
-        {
-            performLongRangeAction = true;
-        }
     }
 
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+    }
+
+    public virtual void TriggerAttack()
+    {
+
+    }
+
+    public virtual void FinishAttack()
+    {
+        isAnimationFinished = true;
     }
 }

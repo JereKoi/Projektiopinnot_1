@@ -1114,12 +1114,54 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &739741356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739741353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f248e1642c72014e8c895ffb575d03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &739741358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3467609132442132364, guid: 8405876d800ced747acf22fe18ad618f,
     type: 3}
   m_PrefabInstance: {fileID: 3467609133324879106}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &903965748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903965749}
+  m_Layer: 8
+  m_Name: MeleeAttackPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &903965749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903965748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.285, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 739741358}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924030758
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,8 +1392,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003648674}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 4.99, y: 6.07, z: 0}
-  m_LocalScale: {x: 6.5724554, y: 0.7003167, z: 1}
+  m_LocalPosition: {x: 4.99, y: 2.299, z: 0}
+  m_LocalScale: {x: 2.8012125, y: 0.7003167, z: 1}
   m_Children: []
   m_Father: {fileID: 380068837}
   m_RootOrder: 2
@@ -2688,6 +2730,9 @@ MonoBehaviour:
   chargeStateData: {fileID: 11400000, guid: 54c075aa8ca2a2844b8d43d00da5d707, type: 2}
   lookForPlayerStateData: {fileID: 11400000, guid: 5ba48e02e0d51464e8dfc3785dd610b1,
     type: 2}
+  meleeAttackStateData: {fileID: 11400000, guid: efcaab1d970e64e479a3a703a05f4c60,
+    type: 2}
+  meleeAttackPosition: {fileID: 903965749}
 --- !u!1001 &2121672426298125586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2784,6 +2829,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 612157490, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 842385795, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2126407357, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172658465695120037, guid: e9d2648ffe990824c85eafd1cdfaf66f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2172658466295032177, guid: e9d2648ffe990824c85eafd1cdfaf66f,
         type: 3}
       propertyPath: m_RootOrder
@@ -2843,6 +2905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KnightTestiJere
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172658467605629757, guid: e9d2648ffe990824c85eafd1cdfaf66f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
