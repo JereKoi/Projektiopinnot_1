@@ -121,6 +121,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &21601095
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21601096}
+  m_Layer: 8
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &21601096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21601095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.015, y: -0.313, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 739741358}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46065952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3132008328218091086, guid: 4385182d7fa822142973a169a924a138,
@@ -2724,6 +2754,7 @@ MonoBehaviour:
   wallCheck: {fileID: 1038443978}
   ledgeCheck: {fileID: 1374161072}
   playerCheck: {fileID: 407278022}
+  groundCheck: {fileID: 21601096}
   idleStateData: {fileID: 11400000, guid: df5c63b2327700d4eabcca08aad43679, type: 2}
   moveStateData: {fileID: 11400000, guid: fc30d3e227faa1746a3b921e4aa8ba36, type: 2}
   playerDetectedData: {fileID: 11400000, guid: b025fd7cce3adf842b511d74d9d146a4, type: 2}
@@ -2732,6 +2763,8 @@ MonoBehaviour:
     type: 2}
   meleeAttackStateData: {fileID: 11400000, guid: efcaab1d970e64e479a3a703a05f4c60,
     type: 2}
+  stunStateData: {fileID: 11400000, guid: d5281cb4828813d47ba9ea412f12d14f, type: 2}
+  deadStateData: {fileID: 11400000, guid: 4fc38bb07c010b741acbc86fbb6edbab, type: 2}
   meleeAttackPosition: {fileID: 903965749}
 --- !u!1001 &2121672426298125586
 PrefabInstance:
