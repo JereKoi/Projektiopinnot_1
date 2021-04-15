@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spikesTestScript : MonoBehaviour
+public class EnemyKnockback : MonoBehaviour
 {
     //Lisää tää koodi piikkeihin
     private PlayerStats playerStats;
     private PlayerControllerV2 playerController;
-    
+
 
 
     private void OnTriggerEnter2D(Collider2D col)

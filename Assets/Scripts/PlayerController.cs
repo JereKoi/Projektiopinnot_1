@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D theRB;
 
     float mx;
+    public static PlayerController instance;
 
     private void Update()
     {

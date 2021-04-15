@@ -61,7 +61,6 @@ public class PlayerCombat_V2 : MonoBehaviour
             //perform attack1
             if (!isAttacking)
             {
-                Debug.Log("gotinput toimii combatissa");
                 gotInput = false;
                 isAttacking = true;
                 isFirstAttack = !isFirstAttack;

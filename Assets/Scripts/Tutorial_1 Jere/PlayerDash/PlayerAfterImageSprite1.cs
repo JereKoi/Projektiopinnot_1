@@ -19,11 +19,13 @@ public class PlayerAfterImageSprite1 : MonoBehaviour
 
     private Color color;
 
-    private void OnEnable1()
+    private void OnEnable()
     {
         SR = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerSR = player.GetComponent<SpriteRenderer>();
+        transform.localScale = player.localScale;
+
 
         alpha = alphaSet;
         SR.sprite = playerSR.sprite;
@@ -32,7 +34,7 @@ public class PlayerAfterImageSprite1 : MonoBehaviour
         timeActivated = Time.time;
     }
 
-    private void Update1()
+    private void Update()
     {
         alpha *= alphaMutliplier;
         color = new Color(1f, 1f, 1f, alpha);
