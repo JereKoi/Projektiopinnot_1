@@ -853,7 +853,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 279293943
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6158c61199ce38a4589cc443514b185b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12088,9 +12088,9 @@ GameObject:
   - component: {fileID: 1245424974}
   - component: {fileID: 1245424973}
   - component: {fileID: 1245424977}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: Alive
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12199,8 +12199,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -815349819
-  m_SortingLayer: 5
-  m_SortingOrder: 0
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8994285840009083728, guid: 000867bb72bb53a449985064aa2adcc0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17503,7 +17503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2131836637}
   - component: {fileID: 2131836638}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -17652,6 +17652,10 @@ PrefabInstance:
     - target: {fileID: 830998284, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
       propertyPath: distanceBetweenImages
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 830998285, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
+      propertyPath: whatIsDamageable.m_Bits
+      value: 32768
       objectReference: {fileID: 0}
     - target: {fileID: 2172658466295032177, guid: e9d2648ffe990824c85eafd1cdfaf66f,
         type: 3}
@@ -17831,6 +17835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Alive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467609132442132363, guid: 8405876d800ced747acf22fe18ad618f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3467609132442132364, guid: 8405876d800ced747acf22fe18ad618f,
         type: 3}
