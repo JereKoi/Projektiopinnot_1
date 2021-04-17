@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -815349819
-  m_SortingLayer: 5
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5287939958834139383, guid: fac80c4a787adda4d9f6d1814f380de6,
     type: 3}
@@ -127,6 +127,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   damagePosition: {fileID: 5866098116630617990}
+  TimeLeft: 1
 --- !u!1 &6924041814043676500
 GameObject:
   m_ObjectHideFlags: 0

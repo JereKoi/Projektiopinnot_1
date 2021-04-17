@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 739741354}
   - component: {fileID: 739741356}
   - component: {fileID: 739741360}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: Enemytestisprite_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}

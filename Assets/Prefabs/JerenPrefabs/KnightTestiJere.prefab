@@ -4788,7 +4788,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1105245395
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -5
   m_RenderMode: 0
   m_SortMode: 0
@@ -4953,7 +4953,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1105245395
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 4196223845047917758, guid: 20ca4977a875be7409b91de8876bc2e8,
     type: 3}
@@ -5082,7 +5082,7 @@ MonoBehaviour:
   ledgeClimbYOffset2: 2
   dashTime: 0.2
   dashSpeed: 50
-  distanceBetweenImages: 0.5
+  distanceBetweenImages: 2
   dashCoolDown: 2.5
   wallHopDirection: {x: 1, y: 0.5}
   wallJumpDirection: {x: 1, y: 2}
@@ -5112,7 +5112,7 @@ MonoBehaviour:
   attack1HitBoxPos: {fileID: 2172658465695120034}
   whatIsDamageable:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 32768
 --- !u!114 &830998287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5130,3 +5130,7 @@ MonoBehaviour:
     type: 3}
   deathBloodParticle: {fileID: 1083113734207304328, guid: cf4b20c56df1f434a836d4a458274d46,
     type: 3}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

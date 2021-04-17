@@ -6315,7 +6315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503.5, y: 338}
+  m_AnchoredPosition: {x: -618, y: 338}
   m_SizeDelta: {x: 5652.517, y: 6587.6753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924030760
@@ -12505,7 +12505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -617.8, y: 338}
+  m_AnchoredPosition: {x: -503.6, y: 338}
   m_SizeDelta: {x: 5652.517, y: 6587.6753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1505201675
@@ -17647,7 +17647,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2139877203}
   - component: {fileID: 2139877202}
-  - component: {fileID: 2139877201}
   - component: {fileID: 2139877200}
   m_Layer: 0
   m_Name: WaterCamera
@@ -17687,14 +17686,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!81 &2139877201
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139877199}
-  m_Enabled: 1
 --- !u!20 &2139877202
 Camera:
   m_ObjectHideFlags: 0
@@ -17848,22 +17839,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 830998284, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
-      propertyPath: distanceBetweenImages
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 830998285, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
-      propertyPath: whatIsDamageable.m_Bits
-      value: 32768
-      objectReference: {fileID: 0}
-    - target: {fileID: 830998287, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
-      propertyPath: hearts
-      value: 
-      objectReference: {fileID: 924030758}
-    - target: {fileID: 830998287, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
-      propertyPath: hearts.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 830998287, guid: e9d2648ffe990824c85eafd1cdfaf66f, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
@@ -18054,11 +18029,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Alive
-      objectReference: {fileID: 0}
-    - target: {fileID: 3467609132442132363, guid: 8405876d800ced747acf22fe18ad618f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3467609132442132364, guid: 8405876d800ced747acf22fe18ad618f,
         type: 3}
