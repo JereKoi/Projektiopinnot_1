@@ -17,9 +17,11 @@ public class PlayerStats : MonoBehaviour
     private int life;
 
 
-    private float currentHealh;
+    public float currentHealh;
 
     private GameManager GM;
+
+    public static float currentHealth { get; internal set; } //tama on testi
 
     private void Start()
     {
@@ -45,6 +47,7 @@ public class PlayerStats : MonoBehaviour
         {
             life -= d;
             Destroy(hearts[life].gameObject);
+            CinemachineShake.Instance.shakeCamera(2.5f, .1f);
         }
     }
 
