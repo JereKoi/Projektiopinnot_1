@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -20,20 +18,20 @@ public class HealthSystem : MonoBehaviour
             //SET DEAD CODE
             Debug.Log("We are DEAD");
         }
-        
+
     }
 
     public void TakeDamage(int d)
     {
-        if (life >= 1) 
+        if (life >= 1)
         {
             life -= d;
             Destroy(hearts[life].gameObject);
-            if(life < 1)
+            if (life < 1)
             {
                 dead = true;
             }
         }
     }
 }
-    
+

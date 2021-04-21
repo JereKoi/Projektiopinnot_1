@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -17,13 +15,13 @@ public class PlayerStats : MonoBehaviour
     private int life;
 
 
-    public float currentHealh;
+    private float currentHealh;
 
     private GameManager GM;
 
     public static float currentHealth { get; internal set; } //tama on testi
 
-    private void Start()
+    public void Start()
     {
         currentHealh = maxHealth;
         GM = GameObject.Find("GameManager").GetComponent<GameManager>();

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerControllerV2 : MonoBehaviour
 {
@@ -79,6 +77,8 @@ public class PlayerControllerV2 : MonoBehaviour
     public Transform wallCheck;
     public Transform ledgeCheck;
 
+    public static PlayerControllerV2 Instance;
+
     public LayerMask whatIsGround;
 
     // Start is called before the first frame update
@@ -137,7 +137,7 @@ public class PlayerControllerV2 : MonoBehaviour
 
     private void CheckKnockback()
     {
-        if(Time.time >= knockbackStartTime + knockbackDuration && knockback)
+        if (Time.time >= knockbackStartTime + knockbackDuration && knockback)
         {
             knockback = false;
             rb.velocity = new Vector2(0.0f, rb.velocity.y);
@@ -255,7 +255,7 @@ public class PlayerControllerV2 : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if (isGrounded || (amountOfJumpsLeft > 0 &&  !isTouchingWall))
+            if (isGrounded || (amountOfJumpsLeft > 0 && !isTouchingWall))
             {
                 NormalJump();
             }
@@ -268,7 +268,7 @@ public class PlayerControllerV2 : MonoBehaviour
 
         if (Input.GetButtonDown("Horizontal") && isTouchingWall)
         {
-            if(!isGrounded && movementInputDirection != facingDirection)
+            if (!isGrounded && movementInputDirection != facingDirection)
             {
                 canMove = false;
                 canFlip = false;

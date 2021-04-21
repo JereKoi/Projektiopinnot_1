@@ -7,7 +7,7 @@ public class SettingsScript : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("JereScene");
     }
 
     public void OptionsButton()

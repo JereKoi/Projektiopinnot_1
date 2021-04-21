@@ -130,13 +130,13 @@ public class BossController : MonoBehaviour
         }
     }
 
-    public void TakeHit1()
-    {
-        currentState = bossStates.hurt;
-        hurtCounter = hurtTime;
+    //public void TakeHit1()
+    //{
+    //    currentState = bossStates.hurt;
+    //    hurtCounter = hurtTime;
 
-        anim.SetTrigger("Hit");
-    }
+    //    anim.SetTrigger("Hit");
+    //}
 
     private void EndMovement()
     {

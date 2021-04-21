@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerCombat_V2 : MonoBehaviour
 {
@@ -70,7 +68,7 @@ public class PlayerCombat_V2 : MonoBehaviour
             }
         }
 
-        if(Time.time >= lastInputTime + inputTimer)
+        if (Time.time >= lastInputTime + inputTimer)
         {
             //Wait for new input
             gotInput = false;
