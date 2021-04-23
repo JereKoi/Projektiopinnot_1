@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
@@ -94,7 +92,7 @@ public class BossController : MonoBehaviour
                         moveRight = false;
 
                         EndMovement();
-                  
+
                     }
                 }
                 else
@@ -111,7 +109,7 @@ public class BossController : MonoBehaviour
 
                     }
                 }
-                break;         
+                break;
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,7 +10,6 @@ public class GameManager : MonoBehaviour
     private GameObject player;
     [SerializeField]
     private float respawnTime;
-
 
     private float respawnTimeStart;
 

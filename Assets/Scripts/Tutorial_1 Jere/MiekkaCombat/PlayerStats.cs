@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -19,9 +20,7 @@ public class PlayerStats : MonoBehaviour
 
     private GameManager GM;
 
-    public static float currentHealth { get; internal set; } //tama on testi
-
-    public void Start()
+    private void Start()
     {
         currentHealh = maxHealth;
         GM = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -45,7 +44,6 @@ public class PlayerStats : MonoBehaviour
         {
             life -= d;
             Destroy(hearts[life].gameObject);
-            CinemachineShake.Instance.shakeCamera(2.5f, .1f);
         }
     }
 

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BasicEnemyController : MonoBehaviour
 {
@@ -31,7 +29,7 @@ public class BasicEnemyController : MonoBehaviour
         wallCheck,
         touchDamageCheck;
     [SerializeField]
-    private LayerMask 
+    private LayerMask
         whatIsGround,
         whatIsPlayer;
     [SerializeField]
@@ -52,7 +50,7 @@ public class BasicEnemyController : MonoBehaviour
         facingDirection,
         damageDirection;
 
-    private Vector2 
+    private Vector2
         movement,
         touchDamageBotLeft,
         touchDamageTopRight;
@@ -182,11 +180,11 @@ public class BasicEnemyController : MonoBehaviour
 
         //Hit particle
 
-        if(currentHealth > 0.0f)
+        if (currentHealth > 0.0f)
         {
             SwitchState(State.Knockback);
         }
-        else if(currentHealth <= 0.0f)
+        else if (currentHealth <= 0.0f)
         {
             SwitchState(State.Dead);
         }
@@ -194,14 +192,14 @@ public class BasicEnemyController : MonoBehaviour
 
     private void CheckTouchDamage()
     {
-        if(Time.time >= lastTouchDamageTime + touchDamageCooldown)
+        if (Time.time >= lastTouchDamageTime + touchDamageCooldown)
         {
             touchDamageBotLeft.Set(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
             touchDamageTopRight.Set(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
 
             Collider2D hit = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight, whatIsPlayer);
 
-            if(hit != null)
+            if (hit != null)
             {
                 lastTouchDamageTime = Time.time;
                 attackDetails[0] = touchDamage;

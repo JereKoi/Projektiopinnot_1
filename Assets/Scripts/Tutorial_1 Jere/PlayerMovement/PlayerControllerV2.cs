@@ -77,8 +77,6 @@ public class PlayerControllerV2 : MonoBehaviour
     public Transform wallCheck;
     public Transform ledgeCheck;
 
-    public static PlayerControllerV2 Instance;
-
     public LayerMask whatIsGround;
 
     // Start is called before the first frame update

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
@@ -66,7 +64,7 @@ public class Projectile : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            if(groundHit)
+            if (groundHit)
             {
                 hasHitGround = true;
                 rb.gravityScale = 0f;
@@ -79,7 +77,7 @@ public class Projectile : MonoBehaviour
                 isGravityOn = true;
                 rb.gravityScale = gravity;
             }
-        }        
+        }
     }
 
     public void FireProjectile(float speed, float travelDistance, float damage)

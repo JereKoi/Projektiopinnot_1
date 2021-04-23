@@ -7,7 +7,9 @@ public class spikesTestScript : MonoBehaviour
     //Lisää tää koodi piikkeihin
     private PlayerStats playerStats;
     private PlayerControllerV2 playerController;
-    
+
+    public float decreaseHealthAmount = 1f;
+    public int knockbackAmount = 2;
 
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -19,9 +21,9 @@ public class spikesTestScript : MonoBehaviour
             Debug.Log("Hit");
 
             playerStats = FindObjectOfType<PlayerStats>();
-            playerStats.DecreaseHealth(1f);
+            playerStats.DecreaseHealth(decreaseHealthAmount);
             playerController = FindObjectOfType<PlayerControllerV2>();
-            playerController.Knockback(2);
+            playerController.Knockback(knockbackAmount);
         }
     }
 }
