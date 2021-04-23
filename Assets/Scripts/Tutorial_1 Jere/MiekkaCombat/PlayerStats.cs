@@ -11,28 +11,27 @@ public class PlayerStats : MonoBehaviour
         deathChunkParticle,
         deathBloodParticle;
 
-
     public GameObject[] hearts;
     private int life;
 
 
-    private float currentHealh;
+    private float currentHealth;
 
     private GameManager GM;
 
     private void Start()
     {
-        currentHealh = maxHealth;
+        currentHealth = maxHealth;
         GM = GameObject.Find("GameManager").GetComponent<GameManager>();
-        life = hearts.Length;
+        life = hearts.Length;       
     }
 
     public void DecreaseHealth(float amount)
     {
-        currentHealh -= amount;
+        currentHealth -= amount;
         TakeDamage(1);
 
-        if (currentHealh <= 0.0f)
+        if (currentHealth <= 0.0f)
         {
             Die();
         }
