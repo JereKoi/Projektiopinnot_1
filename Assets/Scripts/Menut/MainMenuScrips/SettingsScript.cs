@@ -10,6 +10,11 @@ public class SettingsScript : MonoBehaviour
         SceneManager.LoadScene("JereScene");
     }
 
+    public void BindingsButton()
+    {
+        SceneManager.LoadScene("BindingsScene");
+    }
+
     public void OptionsButton()
     {
         SceneManager.LoadScene("SettingsScene");
