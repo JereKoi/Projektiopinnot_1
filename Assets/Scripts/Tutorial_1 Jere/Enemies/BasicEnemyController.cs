@@ -44,7 +44,7 @@ public class BasicEnemyController : MonoBehaviour
         currentHealth,
         knockbackStartTime;
 
-    private float[] attackDetails = new float[2];
+    private AttackDetails attackDetails;
 
     private int
         facingDirection,
@@ -197,14 +197,15 @@ public class BasicEnemyController : MonoBehaviour
             touchDamageBotLeft.Set(touchDamageCheck.position.x - (touchDamageWidth / 2), touchDamageCheck.position.y - (touchDamageHeight / 2));
             touchDamageTopRight.Set(touchDamageCheck.position.x + (touchDamageWidth / 2), touchDamageCheck.position.y + (touchDamageHeight / 2));
 
-            Collider2D hit = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight, whatIsPlayer);
+            Collider2D collider = Physics2D.OverlapArea(touchDamageBotLeft, touchDamageTopRight, whatIsPlayer);
 
-            if (hit != null)
+            if (collider != null)
             {
                 lastTouchDamageTime = Time.time;
-                attackDetails[0] = touchDamage;
-                attackDetails[1] = alive.transform.position.x;
-                hit.SendMessage("Damage", attackDetails);
+                _ = attackDetails.touchDamage;
+                attackDetails.position = transform.position;
+                CinemachineShake.Instance.shakeCamera(2f, .1f);
+                collider.transform.parent.SendMessage("Damage", attackDetails);
             }
         }
     }
