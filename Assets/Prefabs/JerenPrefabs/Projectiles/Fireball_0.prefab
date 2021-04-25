@@ -4777,8 +4777,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5630139232838981266}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.903, y: -0.067, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0.919, y: -0.195, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 9159914231297659142}
   m_RootOrder: 1
@@ -4886,7 +4886,7 @@ Transform:
   m_GameObject: {fileID: 9159914231297659164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.084, y: 2.939, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 9159914230703810757}
   - {fileID: 3621197741529997767}
@@ -5028,8 +5028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb5ae3e19960634f8620a1d00696503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 3
-  damageRadius: 0.5
+  gravity: 1
+  damageRadius: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
