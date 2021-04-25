@@ -77,6 +77,8 @@ public class PlayerControllerV2 : MonoBehaviour
     public Transform wallCheck;
     //public Transform ledgeCheck;
 
+    public Vector3 respawnPoint;
+
     public LayerMask whatIsGround;
 
     // Start is called before the first frame update
@@ -87,6 +89,7 @@ public class PlayerControllerV2 : MonoBehaviour
         amountOfJumpsLeft = amountOfJumps;
         wallHopDirection.Normalize();
         wallJumpDirection.Normalize();
+        respawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -455,6 +458,18 @@ public class PlayerControllerV2 : MonoBehaviour
             facingDirection *= -1;
             isFacingRight = !isFacingRight;
             transform.Rotate(0.0f, 180.0f, 0.0f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+        }
+        if (other.tag == "Checkpoint")
+        {
+            respawnPoint = other.transform.position;
         }
     }
 
