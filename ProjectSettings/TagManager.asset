@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - ExplosionTag
+  - Checkpoint
+  - FallDetector
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -13,14 +18,14 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Enemy
+  - Player
+  - Ground
+  - Damageable
+  - Checks
+  - FallDetector
+  - Spikes
   - 
   - 
   - 

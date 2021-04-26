@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class E3_DeadState : DeadState
 {
@@ -19,6 +20,7 @@ public class E3_DeadState : DeadState
     public override void Enter()
     {
         base.Enter();
+        SceneManager.LoadScene("Menu");
     }
 
     public override void Exit()

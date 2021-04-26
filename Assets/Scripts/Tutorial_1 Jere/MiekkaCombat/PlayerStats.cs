@@ -29,6 +29,8 @@ public class PlayerStats : MonoBehaviour
     public void DecreaseHealth(float amount)
     {
         currentHealth -= amount;
+        Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
+        CinemachineShake.Instance.shakeCamera(4f, .1f);
         TakeDamage(1);
 
         if (currentHealth <= 0.0f)

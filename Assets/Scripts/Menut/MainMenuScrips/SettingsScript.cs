@@ -7,7 +7,7 @@ public class SettingsScript : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("JereScene");
+        SceneManager.LoadScene("MainStage1");
     }
 
     public void BindingsButton()

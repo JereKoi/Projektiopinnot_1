@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ryhma Scenet/Jere/BindingsScene.unity
     guid: 0ca3c91293562f4468ef8a2711564816
+  - enabled: 1
+    path: Assets/GameScenes/MainStage1.unity
+    guid: f512acb8afbd9294eb82174ced5929f8
   m_configObjects: {}

@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -815349819
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5287939958834139383, guid: fac80c4a787adda4d9f6d1814f380de6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,12 +122,11 @@ MonoBehaviour:
   damageRadius: 0.15
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2048
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 1024
   damagePosition: {fileID: 5866098116630617990}
-  TimeLeft: 1
 --- !u!1 &6924041814043676500
 GameObject:
   m_ObjectHideFlags: 0

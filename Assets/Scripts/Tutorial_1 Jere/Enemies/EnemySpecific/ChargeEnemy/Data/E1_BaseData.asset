@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 30
   damageHopSpeed: 10
-  wallCheckDistance: 0.2
-  ledgeCheckDistance: 1.2
-  groundCheckRadius: 0.3
+  wallCheckDistance: 0.3
+  ledgeCheckDistance: 0.4
+  groundCheckRadius: 0.4
   minAgroDistance: 10
   maxAgroDistance: 12
   stunResistence: 3
@@ -26,7 +26,7 @@ MonoBehaviour:
     type: 3}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2048
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 1024

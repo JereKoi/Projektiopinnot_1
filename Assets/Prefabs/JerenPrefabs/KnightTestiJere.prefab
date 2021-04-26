@@ -4788,7 +4788,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1105245395
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: -5
   m_RenderMode: 0
   m_SortMode: 0
@@ -4951,9 +4951,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1105245395
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4721787544533786933, guid: f378bfd337657c742a49dd14f1ab190a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5046,7 +5046,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knockbackDuration: 0.2
   knockbackSpeed: {x: 10, y: 10}
-  respawnPoint: {x: 0, y: 0, z: 0}
   dust: {fileID: 1251792581}
   amountOfJumps: 2
   movementSpeed: 10
@@ -5074,10 +5073,10 @@ MonoBehaviour:
   wallJumpDirection: {x: 1, y: 2}
   groundCheck: {fileID: 612157491}
   wallCheck: {fileID: 842385796}
-  ledgeCheck: {fileID: 2126407358}
+  respawnPoint: {x: 0, y: 0, z: 0}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 2048
 --- !u!114 &830998285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5098,7 +5097,7 @@ MonoBehaviour:
   attack1HitBoxPos: {fileID: 2172658465695120034}
   whatIsDamageable:
     serializedVersion: 2
-    m_Bits: 32768
+    m_Bits: 4096
 --- !u!114 &830998287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5116,5 +5115,4 @@ MonoBehaviour:
     type: 3}
   deathBloodParticle: {fileID: 1083113734207304328, guid: cf4b20c56df1f434a836d4a458274d46,
     type: 3}
-  hitPointsText: {fileID: 4808863151382068852, guid: 0753dcfed5d31424bbbd052eb3bdb67e,
-    type: 3}
+  hearts: []
