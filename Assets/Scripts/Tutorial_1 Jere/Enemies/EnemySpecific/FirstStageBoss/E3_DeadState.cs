@@ -20,7 +20,7 @@ public class E3_DeadState : DeadState
     public override void Enter()
     {
         base.Enter();
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("GameWonScene");
     }
 
     public override void Exit()

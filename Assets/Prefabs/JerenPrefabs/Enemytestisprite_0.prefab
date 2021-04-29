@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21601095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.1494, z: 0}
+  m_LocalPosition: {x: 0.0046, y: -0.1681, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3467609132442132364}
@@ -144,7 +144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374161071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0213, y: -0.1245, z: 0}
+  m_LocalPosition: {x: 0.174, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3467609132442132364}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 739741355}
   - component: {fileID: 739741354}
   - component: {fileID: 739741356}
-  - component: {fileID: 739741360}
+  - component: {fileID: 71104223}
   m_Layer: 12
   m_Name: Enemytestisprite_0
   m_TagString: Enemy
@@ -320,13 +320,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3467609132442132363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0014075935, y: 0.0068411976}
+  m_Offset: {x: 0.0014075935, y: 0.0022817254}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -337,7 +337,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48725963, y: 0.27522615}
+  m_Size: {x: 0.48725963, y: 0.2843451}
   m_EdgeRadius: 0
 --- !u!114 &739741356
 MonoBehaviour:
@@ -351,15 +351,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f248e1642c72014e8c895ffb575d03a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &739741360
-MonoBehaviour:
+--- !u!70 &71104223
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3467609132442132363}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58b85a6595f42fa4884f2e10568ea23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05562877, y: 0.024630072}
+  m_Size: {x: 0.3687425, y: 0.32849228}
+  m_Direction: 0

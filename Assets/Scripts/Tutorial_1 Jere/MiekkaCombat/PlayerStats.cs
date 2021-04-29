@@ -3,35 +3,30 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    [SerializeField]
-    private float maxHealth;
+    public float maxHealth;
+    public float currentHealth;
 
     [SerializeField]
     private GameObject
         deathChunkParticle,
         deathBloodParticle;
 
-    public GameObject[] hearts;
-    private int life;
-
-
-    private float currentHealth;
-
+    public HealthBarScript healthbar;
     private GameManager GM;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        GM = GameObject.Find("GameManager").GetComponent<GameManager>();
-        life = hearts.Length;       
+        healthbar.SetMaxHealth((int)(maxHealth));
+        GM = GameObject.Find("GameManager").GetComponent<GameManager>();      
     }
 
     public void DecreaseHealth(float amount)
     {
         currentHealth -= amount;
+        healthbar.SetHealth((int)currentHealth);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         CinemachineShake.Instance.shakeCamera(4f, .1f);
-        TakeDamage(1);
 
         if (currentHealth <= 0.0f)
         {
@@ -39,20 +34,13 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int d)
-    {
-        if (life >= 1)
-        {
-            life -= d;
-            Destroy(hearts[life].gameObject);
-        }
-    }
-
     private void Die()
     {
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
-        GM.Respawn();
-        Destroy(gameObject);
+        GM.RespawnPlayer();
+        currentHealth = maxHealth;
+        healthbar.SetMaxHealth((int)(maxHealth));
+        //Destroy(gameObject);
     }
 }

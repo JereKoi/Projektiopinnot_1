@@ -22,17 +22,17 @@ public class PlayerControllerV2 : MonoBehaviour
     private bool isGrounded;
     private bool isTouchingWall;
     private bool isWallSliding;
-    private bool canNormalJump;
-    private bool canWallJump;
+    public bool canNormalJump;
+    public bool canWallJump;
     private bool isAttemptingToJump;
     private bool checkJumpMultiplier;
-    private bool canMove;
+    public bool canMove;
     private bool canFlip;
     private bool hasWallJumped;
     private bool isTouchingLedge;
     private bool canClimbLedge = false;
     private bool ledgeDetected;
-    private bool isDashing;
+    public bool isDashing;
     private bool knockback;
 
     [SerializeField]

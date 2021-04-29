@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ryhma Scenet/Jere/SettingsScene.unity
     guid: 9f0c0c3f2e5f33a4da230fcd695f6ece
-  - enabled: 1
+  - enabled: 0
     path: Assets/Ryhma Scenet/Jere/JereScene.unity
     guid: acd62d5f68142ca4f8006b1a95063b92
   - enabled: 1
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameScenes/MainStage1.unity
     guid: f512acb8afbd9294eb82174ced5929f8
+  - enabled: 1
+    path: Assets/Ryhma Scenet/Jere/GameWonScene.unity
+    guid: 3756082d6c18ae44eaba80684a497b55
   m_configObjects: {}
