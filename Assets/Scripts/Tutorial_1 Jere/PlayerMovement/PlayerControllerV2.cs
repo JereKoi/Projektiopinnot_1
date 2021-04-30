@@ -34,6 +34,7 @@ public class PlayerControllerV2 : MonoBehaviour
     private bool ledgeDetected;
     public bool isDashing;
     private bool knockback;
+    public bool knockFromRight;
 
     [SerializeField]
     private Vector2 knockbackSpeed;
@@ -68,7 +69,10 @@ public class PlayerControllerV2 : MonoBehaviour
     public float dashTime;
     public float dashSpeed;
     public float distanceBetweenImages;
-    public float dashCoolDown;
+    public float dashCooldown;
+    public float KnockbackOnCollision;
+    public float knockbackCount;
+    public float KnockbackLength;
 
     public Vector2 wallHopDirection;
     public Vector2 wallJumpDirection;
@@ -297,7 +301,7 @@ public class PlayerControllerV2 : MonoBehaviour
 
         if (Input.GetButtonDown("Dash"))
         {
-            if (Time.time >= (lastDash + dashCoolDown))
+            if (Time.time >= (lastDash + dashCooldown))
                 AttemptToDash();
         }
     }
