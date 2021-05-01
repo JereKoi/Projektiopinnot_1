@@ -4938,8 +4938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000024796}
-  m_SizeDelta: {x: 75.805115, y: 74.753174}
+  m_AnchoredPosition: {x: 0, y: -0.000024438}
+  m_SizeDelta: {x: 71.49042, y: 72.595825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170503594
 MonoBehaviour:
@@ -7320,7 +7320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 551736886}
-  CurrentCheckPoint: {fileID: 551736885}
+  CurrentCheckPoint: {fileID: 0}
   Player: {fileID: 1757252502}
   PlayerRb: {fileID: 1757252508}
   playersRender: {fileID: 1757252510}

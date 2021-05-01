@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         CVC = GameObject.Find("Player Camera").GetComponent<CinemachineVirtualCamera>();
         PS = GameObject.Find("PlayerCharacterLizard").GetComponent<PlayerStats>();
+        PCV2 = FindObjectOfType<PlayerControllerV2>();
         PlayerRb.GetComponent<Rigidbody2D>();
         playersRender.GetComponent<Renderer>();
     }
@@ -94,8 +95,9 @@ public class GameManager : MonoBehaviour
         //Instantiate particles
         Instantiate(RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
         //Respawn player at the current check point
-        Player.transform.position = new Vector2(CurrentCheckPoint.transform.position.x, CurrentCheckPoint.transform.position.y);
-        
+        //Player.transform.position = new Vector2(CurrentCheckPoint.transform.position.x, CurrentCheckPoint.transform.position.y);
+        //Player.transform.position = new Vector2(CurrentCheckPoint.transform.position.x, CurrentCheckPoint.transform.position.y);
+        PCV2.transform.position = CurrentCheckPoint.transform.position;
         Debug.Log("Player Respawned");
     }
 }

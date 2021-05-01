@@ -7,10 +7,12 @@ public class CheckpointController : MonoBehaviour
     public Sprite gate;
     private SpriteRenderer checkpointSpriteRenderer;
     public bool checkpointReached;
+    private GameManager GM;
 
     // Start is called before the first frame update
     void Start()
     {
+        GM = GameObject.Find("GameManager").GetComponent<GameManager>();
         checkpointSpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -24,6 +26,7 @@ public class CheckpointController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            GM.CurrentCheckPoint = gameObject;
             checkpointSpriteRenderer.sprite = gate;
             checkpointReached = true;
         }
