@@ -194,7 +194,6 @@ GameObject:
   - component: {fileID: 739741355}
   - component: {fileID: 739741354}
   - component: {fileID: 739741356}
-  - component: {fileID: 71104223}
   m_Layer: 12
   m_Name: Enemytestisprite_0
   m_TagString: Enemy
@@ -351,19 +350,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f248e1642c72014e8c895ffb575d03a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!70 &71104223
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3467609132442132363}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.05562877, y: 0.024630072}
-  m_Size: {x: 0.3687425, y: 0.32849228}
-  m_Direction: 0
