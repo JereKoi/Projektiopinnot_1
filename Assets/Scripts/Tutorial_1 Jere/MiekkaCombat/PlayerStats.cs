@@ -34,6 +34,15 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void AddHealth()
+    {
+        if (currentHealth < maxHealth && currentHealth != 0)
+        {
+            currentHealth += 1;
+            healthbar.SetHealth((int)currentHealth);
+        }        
+    }
+
     private void Die()
     {
         Instantiate(deathChunkParticle, transform.position, deathChunkParticle.transform.rotation);

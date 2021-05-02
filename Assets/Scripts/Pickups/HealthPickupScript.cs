@@ -16,11 +16,10 @@ public class HealthPickupScript : MonoBehaviour
         {
             return;
         }
-
-        PS.DecreaseHealth(-healthToGive);
-
+        PS.AddHealth();
+        //PS.DecreaseHealth(-healthToGive);
         pickupSound.Play();
 
-        gameObject.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
