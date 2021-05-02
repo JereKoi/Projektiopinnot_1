@@ -40376,6 +40376,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1170717658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1168245620276990458, guid: 6131ebd93498ee84c864ff65e7abe596,
+    type: 3}
+  m_PrefabInstance: {fileID: 1174134253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1174134253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40387,6 +40393,10 @@ PrefabInstance:
       propertyPath: PS
       value: 
       objectReference: {fileID: 1757252504}
+    - target: {fileID: 590162242, guid: 6131ebd93498ee84c864ff65e7abe596, type: 3}
+      propertyPath: Healthpickup
+      value: 
+      objectReference: {fileID: 1170717658}
     - target: {fileID: 1168245620276990453, guid: 6131ebd93498ee84c864ff65e7abe596,
         type: 3}
       propertyPath: m_RootOrder
