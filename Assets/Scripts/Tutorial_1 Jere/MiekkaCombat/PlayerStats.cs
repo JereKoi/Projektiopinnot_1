@@ -26,7 +26,7 @@ public class PlayerStats : MonoBehaviour
         currentHealth -= amount;
         healthbar.SetHealth((int)currentHealth);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
-        CinemachineShake.Instance.shakeCamera(4f, .1f);
+        //CinemachineShake.Instance.shakeCamera(4f, .1f);
 
         if (currentHealth <= 0.0f)
         {

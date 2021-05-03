@@ -87,7 +87,7 @@ public class PlayerCombat_V2 : MonoBehaviour
         {
             collider.transform.parent.SendMessage("Damage", attackDetails);
             //Instantiate hit particle
-            CinemachineShake.Instance.shakeCamera(5f, .1f);
+            //CinemachineShake.Instance.shakeCamera(5f, .1f);
         }
     }
 
