@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - FallDetector
   - Ground
+  - AttackPos
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - FallDetector
   - Spikes
   - Healthpickup
-  - 
+  - AttackPos
   - 
   - 
   - 

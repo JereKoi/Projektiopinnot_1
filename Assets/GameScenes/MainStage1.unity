@@ -40397,6 +40397,11 @@ PrefabInstance:
       propertyPath: Healthpickup
       value: 
       objectReference: {fileID: 1170717658}
+    - target: {fileID: 1168245620276990452, guid: 6131ebd93498ee84c864ff65e7abe596,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1168245620276990453, guid: 6131ebd93498ee84c864ff65e7abe596,
         type: 3}
       propertyPath: m_RootOrder
@@ -63681,6 +63686,21 @@ PrefabInstance:
       propertyPath: dashCooldown
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7891236168455493827, guid: 2a97a9f44bc2c63458e5fdf0c9ebf147,
+        type: 3}
+      propertyPath: knockbackCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7891236168455493827, guid: 2a97a9f44bc2c63458e5fdf0c9ebf147,
+        type: 3}
+      propertyPath: KnockbackLength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7891236168455493827, guid: 2a97a9f44bc2c63458e5fdf0c9ebf147,
+        type: 3}
+      propertyPath: KnockbackOnCollision
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8333233954224846522, guid: 2a97a9f44bc2c63458e5fdf0c9ebf147,
         type: 3}
       propertyPath: m_Name
@@ -63745,6 +63765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8333233954631558506, guid: 2a97a9f44bc2c63458e5fdf0c9ebf147,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a97a9f44bc2c63458e5fdf0c9ebf147, type: 3}

@@ -32,12 +32,14 @@ public class GameManager : MonoBehaviour
     private CinemachineVirtualCamera CVC;
     private PlayerControllerV2 PCV2;
     private PlayerStats PS;
+    private PlayerCombat_V2 PCombat;
 
     private void Start()
     {
         CVC = GameObject.Find("Player Camera").GetComponent<CinemachineVirtualCamera>();
         PS = GameObject.Find("PlayerCharacterLizard").GetComponent<PlayerStats>();
         PCV2 = FindObjectOfType<PlayerControllerV2>();
+        PCombat = FindObjectOfType<PlayerCombat_V2>();
         PlayerRb.GetComponent<Rigidbody2D>();
         playersRender.GetComponent<Renderer>();
     }
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
         //Hide Player
         //PlayerRb.isKinematic = true;
         playersRender.enabled = false;
+        PCombat.enabled = false;
 
         //Generate Death Particle
         Instantiate(DeathParticle, Player.transform.position, Player.transform.rotation);
@@ -91,6 +94,7 @@ public class GameManager : MonoBehaviour
         PlayerRb.gravityScale = GravityStore;
         //Enable players render
         playersRender.enabled = true;
+        PCombat.enabled = true;
 
         //Instantiate particles
         Instantiate(RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
