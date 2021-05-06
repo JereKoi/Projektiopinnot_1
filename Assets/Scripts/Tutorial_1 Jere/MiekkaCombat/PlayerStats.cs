@@ -6,6 +6,9 @@ public class PlayerStats : MonoBehaviour
     public float maxHealth;
     public float currentHealth;
 
+    public AudioSource takeHitSound;
+    public AudioSource deathSound;
+
     [SerializeField]
     private GameObject
         deathChunkParticle,
@@ -27,10 +30,12 @@ public class PlayerStats : MonoBehaviour
         healthbar.SetHealth((int)currentHealth);
         Instantiate(deathBloodParticle, transform.position, deathBloodParticle.transform.rotation);
         //CinemachineShake.Instance.shakeCamera(4f, .1f);
+        takeHitSound.Play();
 
         if (currentHealth <= 0.0f)
         {
             Die();
+            deathSound.Play();
         }
     }
 

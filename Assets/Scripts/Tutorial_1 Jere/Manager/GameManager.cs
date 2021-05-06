@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
         //PlayerRb.isKinematic = true;
         playersRender.enabled = false;
         PCombat.enabled = false;
+        PCV2.dashCooldown = 2f;
 
         //Generate Death Particle
         Instantiate(DeathParticle, Player.transform.position, Player.transform.rotation);

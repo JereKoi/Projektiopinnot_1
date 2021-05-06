@@ -45,9 +45,9 @@ public class SettingsSceneScript : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
-    public void SetVolume (float volume)
+    public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("Volume", volume);
+        audioMixer.SetFloat("MusicVol", Mathf.Log10(volume) * 20);
     }
 
     public void SetFullscreen (bool isFullscreen)

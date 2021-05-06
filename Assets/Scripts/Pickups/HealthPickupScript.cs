@@ -6,7 +6,7 @@ public class HealthPickupScript : MonoBehaviour
 {
     public int healthToGive;
 
-    //public AudioSource pickupSound;
+    public AudioSource pickupSound;
 
     public PlayerStats PS;
 
@@ -26,8 +26,8 @@ public class HealthPickupScript : MonoBehaviour
         }
         else
         {
-            PS.AddHealth();
-            //pickupSound.Play();
+            pickupSound.Play();
+            PS.AddHealth();            
             gameObject.SetActive(false);
         }        
     }

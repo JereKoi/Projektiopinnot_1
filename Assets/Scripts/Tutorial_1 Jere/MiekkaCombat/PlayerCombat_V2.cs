@@ -24,6 +24,8 @@ public class PlayerCombat_V2 : MonoBehaviour
     private PlayerControllerV2 PC;
     private PlayerStats PS;
 
+    public AudioSource AttackSound;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -65,6 +67,7 @@ public class PlayerCombat_V2 : MonoBehaviour
                 anim.SetBool("attack1", true);
                 anim.SetBool("firstAttack", isFirstAttack);
                 anim.SetBool("isAttacking", isAttacking);
+                AttackSound.Play();
             }
         }
 

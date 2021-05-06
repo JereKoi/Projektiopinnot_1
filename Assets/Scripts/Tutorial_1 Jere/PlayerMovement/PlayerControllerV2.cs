@@ -85,6 +85,9 @@ public class PlayerControllerV2 : MonoBehaviour
 
     public LayerMask whatIsGround;
 
+    public AudioSource JumpSound;
+    public AudioSource DashSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -315,6 +318,7 @@ public class PlayerControllerV2 : MonoBehaviour
 
         PlayerAfterImagePool.Instance.GetFromPool();
         lastImageXpos = transform.position.x;
+        DashSound.Play();
     }
 
     public int GetFacingDirection()
@@ -327,7 +331,7 @@ public class PlayerControllerV2 : MonoBehaviour
         if (isDashing)
         {
             if (dashTimeLeft > 0)
-            {
+            {                
                 canMove = false;
                 canFlip = false;
                 rb.velocity = new Vector2(dashSpeed * facingDirection, 0.0f);
@@ -392,6 +396,7 @@ public class PlayerControllerV2 : MonoBehaviour
     {
         if (canNormalJump)
         {
+            JumpSound.Play();
             CreateDust();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             amountOfJumpsLeft--;

@@ -10,4 +10,5 @@ public class D_StunState : ScriptableObject
     public float stunKnockbackTime = 0.2f;
     public float stunKnockbackSpeed = 20f;
     public Vector2 stunKnockbackAngle;
+    public AudioSource stunSound;
 }
