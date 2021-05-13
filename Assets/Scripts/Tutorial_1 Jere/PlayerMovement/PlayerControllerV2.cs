@@ -79,7 +79,6 @@ public class PlayerControllerV2 : MonoBehaviour
 
     public Transform groundCheck;
     public Transform wallCheck;
-    //public Transform ledgeCheck;
 
     public Vector3 respawnPoint;
 
@@ -152,57 +151,11 @@ public class PlayerControllerV2 : MonoBehaviour
         }
     }
 
-    //private void CheckLedgeClimb()
-    //{
-    //    if (ledgeDetected && !canClimbLedge)
-    //    {
-    //        canClimbLedge = true;
-
-    //        if (isFacingRight)
-    //        {
-    //            ledgePos1 = new Vector2(Mathf.Floor(ledgePosBot.x + wallCheckDistance) - ledgeClimbXOffset1, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset1);
-    //            ledgePos2 = new Vector2(Mathf.Floor(ledgePosBot.x + wallCheckDistance) + ledgeClimbXOffset2, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset2);
-    //        }
-    //        else
-    //        {
-    //            ledgePos1 = new Vector2(Mathf.Ceil(ledgePosBot.x - wallCheckDistance) + ledgeClimbXOffset1, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset1);
-    //            ledgePos2 = new Vector2(Mathf.Ceil(ledgePosBot.x - wallCheckDistance) - ledgeClimbXOffset2, Mathf.Floor(ledgePosBot.y) + ledgeClimbYOffset2);
-    //        }
-
-    //        canMove = false;
-    //        canFlip = false;
-
-    //        anim.SetBool("canClimbLedge", canClimbLedge);
-
-    //        if (canClimbLedge)
-    //        {
-    //            transform.position = ledgePos1;
-    //        }
-    //    }
-    //}
-
-    //public void FinishLedgeClimb()
-    //{
-    //    canClimbLedge = false;
-    //    transform.position = ledgePos2;
-    //    canMove = true;
-    //    canFlip = true;
-    //    ledgeDetected = false;
-    //    anim.SetBool("canClimbLedge", canClimbLedge);
-    //}
-
     private void CheckSurroundings()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
         isTouchingWall = Physics2D.Raycast(wallCheck.position, transform.right, wallCheckDistance, whatIsGround);
-        //isTouchingLedge = Physics2D.Raycast(ledgeCheck.position, transform.right, wallCheckDistance, whatIsGround);
-
-        //if (isTouchingWall && !isTouchingLedge && !ledgeDetected)
-        //{
-        //    ledgeDetected = true;
-        //    ledgePosBot = wallCheck.position;
-        //}
     }
 
     private void CheckIfCanJump()
@@ -410,6 +363,7 @@ public class PlayerControllerV2 : MonoBehaviour
     {
         if (canWallJump)
         {
+            JumpSound.Play();
             CreateDust();
             rb.velocity = new Vector2(rb.velocity.x, 0.0f);
             isWallSliding = false;

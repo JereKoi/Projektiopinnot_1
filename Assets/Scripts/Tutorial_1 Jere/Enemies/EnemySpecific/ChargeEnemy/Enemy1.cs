@@ -29,9 +29,11 @@ public class Enemy1 : Entity
     private D_StunState stunStateData;
     [SerializeField]
     private D_DeadState deadStateData;
-
     [SerializeField]
     private Transform meleeAttackPosition;
+
+    public AudioClip takeDamageAudio;
+    public AudioSource TakeDamageAudioSource;
 
     public override void Start()
     {
@@ -46,7 +48,7 @@ public class Enemy1 : Entity
         stunState = new E1_StunState(this, stateMachine, "stun", stunStateData, this);
         deadState = new E1_DeadState(this, stateMachine, "dead", deadStateData, this);
 
-        stateMachine.Initialize(moveState);
+        stateMachine.Initialize(moveState);        
     }
 
     public override void OnDrawGizmos()
@@ -59,6 +61,8 @@ public class Enemy1 : Entity
     public override void Damage(AttackDetails attackDetails)
     {
         base.Damage(attackDetails);
+        TakeDamageAudioSource.clip = takeDamageAudio;
+        TakeDamageAudioSource.Play();
 
         if (isDead)
         {

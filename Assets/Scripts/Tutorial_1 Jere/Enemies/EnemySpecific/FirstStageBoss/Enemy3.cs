@@ -38,6 +38,9 @@ public class Enemy3 : Entity
     [SerializeField]
     private Transform rangeAttackPosition;
 
+    public AudioClip takeDamageAudio;
+    public AudioSource TakeDamageAudioSource;
+
     public override void Start()
     {
         base.Start();
@@ -58,6 +61,9 @@ public class Enemy3 : Entity
     public override void Damage(AttackDetails attackDetails)
     {
         base.Damage(attackDetails);
+
+        TakeDamageAudioSource.clip = takeDamageAudio;
+        TakeDamageAudioSource.Play();
 
         if (isDead)
         {

@@ -6,12 +6,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private Transform respawnPoint;
-    //[SerializeField]
-    //private GameObject player;
-    //[SerializeField]
-    //private float respawnTime;
-
-    //private float respawnTimeStart;
 
     public GameObject CurrentCheckPoint;
     public GameObject Player;
@@ -20,12 +14,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject DeathParticle;
     public GameObject RespawnParticle;
-    //Respawn Delay
     public float RespawnDelay;
-    //Point Penalty on Death
     public int PointPenaltyOnDeath;
-    //Store Gravity Value
     private float GravityStore;
+
 
     private bool respawn;
 
@@ -44,27 +36,6 @@ public class GameManager : MonoBehaviour
         playersRender.GetComponent<Renderer>();
     }
 
-    private void Update()
-    {
-        //CheckRespawn();
-    }
-
-    //public void Respawn()
-    //{
-    //    //respawnTimeStart = Time.time;
-    //    respawn = true;
-    //}
-
-    //private void CheckRespawn()
-    //{
-    //    if (Time.time >= respawnTimeStart + respawnTime && respawn)
-    //    {
-    //        var playerTemp = Instantiate(player, respawnPoint);
-    //        CVC.m_Follow = playerTemp.transform;
-    //        respawn = false;
-    //    }
-    //}
-
     public void RespawnPlayer()
     {
         StartCoroutine("RespawnPlayerCo");
@@ -73,17 +44,12 @@ public class GameManager : MonoBehaviour
     public IEnumerator RespawnPlayerCo()
     {
         //Hide Player
-        //PlayerRb.isKinematic = true;
         playersRender.enabled = false;
         PCombat.enabled = false;
         PCV2.dashCooldown = 2f;
 
         //Generate Death Particle
         Instantiate(DeathParticle, Player.transform.position, Player.transform.rotation);
-        //Point Penalty
-        //  ScoreManager.AddPoints(-PointPenaltyOnDeath);
-        //Show player
-        //PlayerRb.isKinematic = false;
 
         //Gravity Reset
         GravityStore = PlayerRb.gravityScale;
@@ -100,8 +66,6 @@ public class GameManager : MonoBehaviour
         //Instantiate particles
         Instantiate(RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
         //Respawn player at the current check point
-        //Player.transform.position = new Vector2(CurrentCheckPoint.transform.position.x, CurrentCheckPoint.transform.position.y);
-        //Player.transform.position = new Vector2(CurrentCheckPoint.transform.position.x, CurrentCheckPoint.transform.position.y);
         PCV2.transform.position = CurrentCheckPoint.transform.position;
         Debug.Log("Player Respawned");
     }

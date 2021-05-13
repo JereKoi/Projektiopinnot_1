@@ -19,7 +19,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   minAgroDistance: 10
   maxAgroDistance: 15
-  stunResistence: 2
+  stunResistence: 4
   stunRecoveryTime: 1
   closeRangeActionDistance: 1
   hitParticle: {fileID: 1083113734207304328, guid: cf4b20c56df1f434a836d4a458274d46,

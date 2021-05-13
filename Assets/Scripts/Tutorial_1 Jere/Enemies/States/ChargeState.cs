@@ -31,7 +31,6 @@ public class ChargeState : State
     public override void Enter()
     {
         base.Enter();
-
         isChargeTimeOver = false;
         entity.SetVelocity(stateData.chargeSpeed);
     }

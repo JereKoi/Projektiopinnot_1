@@ -3,7 +3,23 @@ guid: e06c9d56fb8a0b1449a935720d9215ea
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - entityData: {instanceID: 0}
+  - wallCheck: {instanceID: 0}
+  - ledgeCheck: {instanceID: 0}
+  - playerCheck: {instanceID: 0}
+  - groundCheck: {instanceID: 0}
+  - idleStateData: {instanceID: 0}
+  - moveStateData: {instanceID: 0}
+  - playerDetectedData: {instanceID: 0}
+  - chargeStateData: {instanceID: 0}
+  - lookForPlayerStateData: {instanceID: 0}
+  - meleeAttackStateData: {instanceID: 0}
+  - stunStateData: {instanceID: 0}
+  - deadStateData: {instanceID: 0}
+  - meleeAttackPosition: {instanceID: 0}
+  - takeDamageAudio: {fileID: 8300000, guid: d6ae67b657f8b83448a1ba321b5be7bc, type: 3}
+  - TakeDamageAudioSource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

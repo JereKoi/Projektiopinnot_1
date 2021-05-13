@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chargeSpeed: 10
   chargeTime: 3
+  ChargeClip: {fileID: 8300000, guid: bfaf43c0dfe33994fa2ce257ba1e2df6, type: 3}
+  ChargeSound: {fileID: 0}
