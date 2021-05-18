@@ -464,14 +464,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MOVE: WASD
+  m_Text: 'MOVE: WASD / ARROW KEYS
 
-    ATTACK: MOUSE1
+    ATTACK: MOUSE1 / "C"-KEY
 
-    DOUBLE JUMP: DOUBLE SPACE
+    DOUBLE JUMP:
+    DOUBLE SPACE
 
-    DASH:
-    LEFT SHIFT
+    DASH: LEFT SHIFT
 
     PAUSE MENU: ESC'
 --- !u!222 &540510621

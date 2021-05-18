@@ -4859,7 +4859,6 @@ GameObject:
   - component: {fileID: 7891236168455493827}
   - component: {fileID: 7891236168455493826}
   - component: {fileID: 7891236168455493824}
-  - component: {fileID: 2041047840}
   m_Layer: 10
   m_Name: PlayerCharacterLizard
   m_TagString: Player
@@ -5016,6 +5015,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackDuration: 0.2
+  canNormalJump: 0
+  canWallJump: 0
+  canMove: 0
+  isDashing: 0
+  knockFromRight: 0
   knockbackSpeed: {x: 10, y: 10}
   dust: {fileID: 7891236167735429386}
   amountOfJumps: 2
@@ -5039,7 +5043,10 @@ MonoBehaviour:
   dashTime: 0.2
   dashSpeed: 50
   distanceBetweenImages: 2
-  dashCoolDown: 2.5
+  dashCooldown: 0
+  KnockbackOnCollision: 0
+  knockbackCount: 0
+  KnockbackLength: 0
   wallHopDirection: {x: 1, y: 0.5}
   wallJumpDirection: {x: 1, y: 2}
   groundCheck: {fileID: 7891236168236652540}
@@ -5048,6 +5055,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 2048
+  JumpSound: {fileID: 0}
+  DashSound: {fileID: 0}
 --- !u!114 &7891236168455493826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5069,6 +5078,7 @@ MonoBehaviour:
   whatIsDamageable:
     serializedVersion: 2
     m_Bits: 4096
+  AttackSound: {fileID: 0}
 --- !u!114 &7891236168455493824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5082,27 +5092,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  currentHealth: 0
+  takeHitSound: {fileID: 0}
   deathChunkParticle: {fileID: 3602996453720072342, guid: 55dc782969f5ce748b87620b12ffa017,
     type: 3}
   deathBloodParticle: {fileID: 1083113734207304328, guid: cf4b20c56df1f434a836d4a458274d46,
     type: 3}
-  hearts: []
---- !u!70 &2041047840
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8333233954224846522}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.026311472, y: 0.0070956154}
-  m_Size: {x: 0.20737709, y: 0.37888443}
-  m_Direction: 0
+  healthbar: {fileID: 0}
 --- !u!1 &8333233954631558506
 GameObject:
   m_ObjectHideFlags: 0
