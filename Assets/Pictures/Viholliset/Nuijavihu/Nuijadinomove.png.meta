@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 933a7b01c47353649b03d5833f1e6e6f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7019532201893311673
+    second: Nuijadinomove_0
+  - first:
+      213: -7969915648528803367
+    second: Nuijadinomove_1
+  - first:
+      213: 8467806461021929417
+    second: Nuijadinomove_2
+  - first:
+      213: -1382832932051596989
+    second: Nuijadinomove_3
+  - first:
+      213: -3788249502514001831
+    second: Nuijadinomove_4
+  - first:
+      213: -4921807830487764049
+    second: Nuijadinomove_5
+  - first:
+      213: 1082542993780118842
+    second: Nuijadinomove_6
+  - first:
+      213: -5749058111067508582
+    second: Nuijadinomove_7
+  - first:
+      213: 3014350595925362938
+    second: Nuijadinomove_8
+  - first:
+      213: 1526970937826589953
+    second: Nuijadinomove_9
+  - first:
+      213: -2097349940110044761
+    second: Nuijadinomove_10
+  - first:
+      213: -3780181602782425116
+    second: Nuijadinomove_11
+  - first:
+      213: 2658528669712750836
+    second: Nuijadinomove_12
+  - first:
+      213: -3205766023048597649
+    second: Nuijadinomove_13
+  - first:
+      213: 6637350247696942931
+    second: Nuijadinomove_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +85,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -64,7 +109,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +130,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Nuijadinomove_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bcbb847ac959e90800000000000000
+      internalID: -7019532201893311673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d91d9fa1fb256190800000000000000
+      internalID: -7969915648528803367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf38f7ac11b38570800000000000000
+      internalID: 8467806461021929417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3494a5d56c03fcce0800000000000000
+      internalID: -1382832932051596989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9584a12062f6d6bc0800000000000000
+      internalID: -3788249502514001831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa37a03ead932bbb0800000000000000
+      internalID: -4921807830487764049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_6
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a351a560e17f50f00800000000000000
+      internalID: 1082542993780118842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_7
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a903eb89b1e3730b0800000000000000
+      internalID: -5749058111067508582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_8
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af84e9275ef15d920800000000000000
+      internalID: 3014350595925362938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_9
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dbf7b4af3e03510800000000000000
+      internalID: 1526970937826589953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_10
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1dd0a7757b4e2e0800000000000000
+      internalID: -2097349940110044761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_11
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efcfab4cd81a8bc0800000000000000
+      internalID: -3780181602782425116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_12
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f89b675dbdf4e420800000000000000
+      internalID: 2658528669712750836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_13
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6feb2379c4d283d0800000000000000
+      internalID: -3205766023048597649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nuijadinomove_14
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357c3d352ea9c1c50800000000000000
+      internalID: 6637350247696942931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
