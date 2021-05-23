@@ -30,4 +30,9 @@ public class SettingsScript : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void Stage2Button()
+    {
+        SceneManager.LoadScene("stage2");
+    }
 }
